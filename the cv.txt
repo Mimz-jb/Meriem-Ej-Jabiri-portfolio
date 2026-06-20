@@ -1,1 +1,155 @@
+%------------------------------------------------------------------------------
+% CV in Latex
+% Author : Charles Rambo
+% Modified for: Meriem EJ-JABIRI
+% License : MIT
+%------------------------------------------------------------------------------
 
+\documentclass[A4,11pt]{article} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+%-----FONT OPTIONS-------------------------------------------------------------
+\usepackage{palatino}
+
+%-----PAGE SETUP---------------------------------------------------------------
+\addtolength{\oddsidemargin}{-1.2cm}
+\addtolength{\evensidemargin}{-1.2cm}
+\addtolength{\textwidth}{2.4cm}
+\addtolength{\topmargin}{-1.4cm} 
+\addtolength{\textheight}{2.8cm}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-----CUSTOM COMMANDS FOR FORMATTING SECTIONS----------------------------------
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{3pt}} 
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{3pt}\item 
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-3pt} 
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\CVItemListStart}{\begin{itemize}[itemsep=4pt, topsep=2pt]}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{2pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING WITH PROFILE PICTURE---------------------------------------------
+\begin{minipage}[c]{0.05\textwidth}
+~
+\end{minipage}
+\begin{minipage}[c]{0.25\textwidth} % Expanded to allow a bigger picture frame
+\begin{tikzpicture}
+    \clip (0,0) circle (1.8cm); % Increased circle size from 1.5cm to 1.8cm
+    \node at (0,0) {\includegraphics[width = 3.8cm, height=3.8cm, keepaspectratio]{photo.jpg}}; 
+\end{tikzpicture}
+\hfill\vline\hfill
+\end{minipage}
+\begin{minipage}[c]{0.60\textwidth} % Adjusted width slightly to balance the layout side-by-side
+    \vspace{-5pt}
+    \textbf{\Huge \scshape{Meriem EJ-JABIRI}} \\ \vspace{3pt} 
+    \small{First-Year Software Engineering Student} \\
+    \small{GISMA University of Applied Sciences} \\ \vspace{3pt}
+    \href{mailto:ejjabirimeriem@gmail.com}{\underline{ejjabirimeriem@gmail.com}}\\
+    \href{https://github.com/Mimz-jb}{\underline{https://github.com/Mimz-jb}} \\
+    \href{https://www.linkedin.com/in/meriem-ej-jabiri-649856381/}{\underline{https://www.linkedin.com/in/meriem-ej-jabiri-649856381/}}
+\end{minipage}
+
+\vspace{10pt}
+
+%-----PROFILE------------------------------------------------------------------
+\section{Profile}
+\vspace{4pt}
+\small{Motivated first-year Software Engineering student at GISMA University of Applied Sciences, with a strong interest in programming, problem-solving, and software development. Currently building a solid foundation in computer science through intensive coursework and practical, version-controlled repository development.}
+
+\vspace{2pt}
+
+%-----EDUCATION----------------------------------------------------------------
+\section{Education}
+  \CVSubHeadingListStart
+    \CVSubheading
+      {Bachelor of Software Engineering}{2026 -- Present}
+      {GISMA University of Applied Sciences}{Berlin,Germany}
+      \CVItemListStart
+        \CVItem{\textbf{Core Modules:} Programming Fundamentals, Discrete Mathematics, Data Structures \& Labs}
+      \CVItemListEnd
+  \CVSubHeadingListEnd
+
+
+  %-----LANGUAGES -----------------------------------
+\section{Languages}
+  \CVSubHeadingListStart
+    \CVSubheading
+      {Arabic}{Native Proficiency}
+      {Mother tongue}{}  
+    \CVSubheading
+      {English}{Fluent}
+      {Academic instruction medium, advanced technical documentation and communication}{}  
+    \CVSubheading
+      {French}{Fluent}
+      {Bilingual communication competency, advanced reading, writing, and speaking}{}
+  \CVSubHeadingListEnd
+
+%-----ACTIVITIES \& INTERESTS---------------------------------------------------
+\section{Activities and Interests}
+  \CVSubHeadingListStart
+    \CVSubheading
+      {Technical Labs \& Engagement}{2026 -- Present}
+      {GISMA University of Applied Sciences}{}
+      \CVItemListStart
+        \CVItem{Active participation in campus software engineering lab tracks and collaborative code hacking sessions.}
+        \CVItem{Continuous skill-building via personal technical tutorials, shell setups, and core algorithm optimization.}
+        \CVItem{Main interests focus on tech innovation trends, artificial intelligence models, and agile systems development.}
+      \CVItemListEnd
+  \CVSubHeadingListEnd
+
+%-----SKILLS-------------------------------------------------------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.5cm, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Java, C} \\ \vspace{4pt}
+     \textbf{Web Technologies}{: HTML5, CSS3} \\ \vspace{4pt}
+     \textbf{Tools \& Systems}{: Git, GitHub, Linux Shell} \\ \vspace{4pt}
+     \textbf{Core Languages}{: English (Fluent), French (Fluent), Arabic (Native)} \\ \vspace{4pt}
+     \textbf{Core Competencies}{: Fast Learning, Structural Adaptability, Agile Collaboration}
+    }}
+ \end{itemize}
+    
+%------------------------------------------------------------------------------
+\end{document}
