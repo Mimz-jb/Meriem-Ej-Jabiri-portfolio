@@ -1,11 +1,11 @@
-/* Basic Page Layout with a Smooth Gradient Blend */
+/* Basic Page Layout with a Horizontal Gradient Blend */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    /* This creates a perfectly smooth transition from Deep Pink down to Black */
-    background: linear-gradient(180deg, #d63384 0%, #301924 30%, #121212 100%);
+    /* This creates a perfectly smooth transition from Left (Black) to Right (Pink) */
+    background: linear-gradient(90deg, #121212 0%, #3a1525 50%, #d63384 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #f5f5f5; /* Clean, soft white text for optimal viewing */
@@ -13,7 +13,7 @@ body {
 
 /* Header Elements */
 header {
-    background-color: transparent; /* Transparent so it blends perfectly into the top gradient */
+    background-color: transparent; /* Transparent so the left-to-right gradient shows through beautifully */
     color: white;
     padding: 40px 20px 10px 20px;
 }
@@ -38,13 +38,14 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.4rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Makes your name pop elegantly */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* Drop shadow so text stays clear over any color background */
 }
 
 header p {
     margin: 5px 0 0 0;
     font-size: 1.15rem;
     opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 /* Professional CV Photo Layout Size */
@@ -55,7 +56,7 @@ header p {
     border: 2px solid white;
     object-fit: cover;
     flex-shrink: 0;     
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Smooth shadow around your photo */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
 }
 
 /* Container for Content */
@@ -63,20 +64,20 @@ header p {
     max-width: 650px;
     margin: 25px auto;
     padding: 25px;
-    /* Semi-transparent rich dark tint so the background gradient subtly shows through */
-    background-color: rgba(30, 30, 30, 0.85); 
-    backdrop-filter: blur(5px); /* Softly blurs the gradient behind the card */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    /* Semi-transparent rich dark tint so the left-to-right gradient subtly glows behind it */
+    background-color: rgba(25, 25, 25, 0.85); 
+    backdrop-filter: blur(8px); /* Softly blurs the gradient behind the card for a premium look */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
     border-radius: 8px;
     border-top: 4px solid #d63384; /* Elegant pink accent line at the top */
 }
 
 /* Headings and Paragraphs */
 h2 {
-    color: #ff69b4; /* Vivid pink titles that stand out beautifully on dark themes */
+    color: #ff69b4; /* Vivid pink titles */
     font-size: 1.3rem;
     margin-top: 25px;
-    border-bottom: 1px solid rgba(255, 105, 180, 0.2); /* Soft matching pink divider */
+    border-bottom: 1px solid rgba(255, 105, 180, 0.2); 
     padding-bottom: 6px;
 }
 
@@ -118,7 +119,6 @@ li {
     margin-top: 8px;
     font-size: 0.9rem;
     box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
-    transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .btn:hover {
@@ -131,8 +131,8 @@ li {
 footer {
     text-align: center;
     padding: 25px;
-    background-color: rgba(18, 18, 18, 0.9); 
-    color: #777777;
+    background-color: rgba(15, 15, 15, 0.95); 
+    color: #666666;
     margin-top: 50px;
     font-size: 0.85rem;
 }
