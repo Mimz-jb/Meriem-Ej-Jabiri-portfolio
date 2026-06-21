@@ -4,15 +4,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff0f5; /* Lavender Blush - a very soft, light pink background */
-    color: #333;
+    background-color: #fff0f5; /* Soft, light pink background */
+    color: #24292e;
 }
 
 /* Header Section */
 header {
     background-color: #d63384; /* Deep Berry Pink */
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -26,76 +26,75 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Navigation Links */
-nav {
-    background-color: #b02a63; /* Darker Berry Pink for contrast */
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 /* Container for Content */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 650px;
+    margin: 30px auto;
     padding: 20px;
-    background-color: white; /* Clean white boxes for text readability */
+    background-color: white; /* Clean white card layout */
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     border-radius: 5px;
-    border-left: 5px solid #d63384; /* Small pink accent bar on the side */
+    border-top: 5px solid #d63384; /* Pink accent line at the top */
 }
 
 /* Headings and Paragraphs */
 h2 {
-    color: #d63384; /* Pink section headings */
+    color: #d63384; /* Pink titles */
+    font-size: 1.25rem;
+    margin-top: 30px;
     border-bottom: 2px solid #fff0f5;
     padding-bottom: 5px;
 }
 
-p {
-    margin-bottom: 15px;
+h3 {
+    color: #b02a63;
+    margin-bottom: 5px;
 }
 
-/* Lists for Skills and Projects */
+/* Hyperlinks */
+a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
 ul {
     padding-left: 20px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-/* Buttons for CV and Project downloads */
+/* Button style for the CV Download link */
 .btn {
     display: inline-block;
-    background-color: #d63384; /* Pink buttons */
+    background-color: #d63384;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     margin-top: 5px;
+    font-size: 0.9rem;
 }
 
 .btn:hover {
-    background-color: #b02a63; /* Darker pink when you hover your mouse */
+    background-color: #b02a63;
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer Area */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #b02a63;
     color: white;
     margin-top: 40px;
+    font-size: 0.9rem;
 }
