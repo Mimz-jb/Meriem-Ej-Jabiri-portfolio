@@ -48,13 +48,13 @@ header p {
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* UPDATED: Perfect Circle with a Solid Black Border */
+/* FIXED: Perfect Circle with a Solid Black Border */
 .cv-photo {
-    width: 120px;       /* Width and height are now exactly equal */
-    height: 120px;      /* This guarantees a perfect circle shape */
-    border-radius: 50%; /* Cuts the square corners into a circle */
-    border: 3px solid #000000; /* Solid black border */
-    object-fit: cover;  
+    width: 120px;       /* Width and height must be exactly equal for a perfect circle */
+    height: 120px;      
+    border-radius: 50%; /* This cuts the square corners into a clean circle */
+    border: 3px solid #000000; /* Solid black border color */
+    object-fit: cover;  /* Keeps your face looking naturally proportioned */
     flex-shrink: 0;     
     box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
 }
