@@ -1,0 +1,101 @@
+/* Basic Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; /* Lavender Blush - a very soft, light pink background */
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #d63384; /* Deep Berry Pink */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1.2rem;
+}
+
+/* Navigation Links */
+nav {
+    background-color: #b02a63; /* Darker Berry Pink for contrast */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container for Content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Clean white boxes for text readability */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    border-left: 5px solid #d63384; /* Small pink accent bar on the side */
+}
+
+/* Headings and Paragraphs */
+h2 {
+    color: #d63384; /* Pink section headings */
+    border-bottom: 2px solid #fff0f5;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Lists for Skills and Projects */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Buttons for CV and Project downloads */
+.btn {
+    display: inline-block;
+    background-color: #d63384; /* Pink buttons */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: #b02a63; /* Darker pink when you hover your mouse */
+}
+
+/* Footer Area */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b02a63;
+    color: white;
+    margin-top: 40px;
+}
