@@ -8,7 +8,7 @@ body {
     color: #24292e;
 }
 
-/* Header Elements */
+/* Header Flexbox Layout (Lines up text and picture side-by-side) */
 header {
     background-color: #d63384; /* Deep Berry Pink */
     color: white;
@@ -18,34 +18,34 @@ header {
 .header-container {
     max-width: 650px;
     margin: 0 auto;
-    text-align: left;
-}
-
-/* Places the tiny photo inline right next to your name */
-.name-photo-row {
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between; /* Pushes text to the left, picture to the right */
+    gap: 15px;
+}
+
+.header-text {
+    text-align: left;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 header p {
     margin: 5px 0 0 0;
     font-size: 1.1rem;
-    opacity: 0.9;
 }
 
-/* Tiny, elegant CV photo style */
-.cv-thumbnail {
-    width: 35px;       /* Micro size - small like a tiny icon badge */
-    height: 35px;
-    border-radius: 4px; /* Classic slight square corner curve like a real CV photo */
-    border: 1px solid white;
+/* Tiny circular picture next to name */
+.header-avatar {
+    width: 80px;      /* Keeps the image small and neat */
+    height: 80px;
+    border-radius: 50%; /* Perfect circle cut */
+    border: 2px solid white;
     object-fit: cover;
+    flex-shrink: 0;   /* Prevents the image from getting squished */
 }
 
 /* Container for Content */
