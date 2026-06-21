@@ -8,20 +8,24 @@ body {
     color: #24292e;
 }
 
-/* Header Flexbox Layout (Lines up text and picture side-by-side) */
+/* Header Elements */
 header {
     background-color: #d63384; /* Deep Berry Pink */
     color: white;
-    padding: 20px;
+    padding: 25px 20px;
 }
 
 .header-container {
     max-width: 650px;
     margin: 0 auto;
+}
+
+/* Flexbox setup for the layout line */
+.name-photo-row {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pushes text to the left, picture to the right */
-    gap: 15px;
+    justify-content: space-between; /* Pushes text to left, picture to right */
+    gap: 30px; /* This adds a perfect, clean space between the name text and the photo */
 }
 
 .header-text {
@@ -36,16 +40,17 @@ header h1 {
 header p {
     margin: 5px 0 0 0;
     font-size: 1.1rem;
+    opacity: 0.9;
 }
 
-/* Tiny circular picture next to name */
-.header-avatar {
-    width: 80px;      /* Keeps the image small and neat */
-    height: 80px;
-    border-radius: 50%; /* Perfect circle cut */
+/* Professional CV Photo Layout Size */
+.cv-photo {
+    width: 120px;       /* Beautiful, clear CV size size */
+    height: 140px;      /* Slightly taller than wide, just like a standard profile/CV photo */
+    border-radius: 6px;  /* Softly rounded rectangle borders */
     border: 2px solid white;
     object-fit: cover;
-    flex-shrink: 0;   /* Prevents the image from getting squished */
+    flex-shrink: 0;     /* Ensures your picture never shrinks on smaller phone displays */
 }
 
 /* Container for Content */
