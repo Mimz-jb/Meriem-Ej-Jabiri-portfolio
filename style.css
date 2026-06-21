@@ -1,21 +1,21 @@
-/* Basic Page Layout */
+/* Basic Page Layout with a Smooth Gradient Blend */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    /* Smooth gradient blending from a dark charcoal black to a deep, dark berry pink */
-    background: linear-gradient(135deg, #0f0f11 0%, #2b101d 100%);
-    background-attachment: fixed; /* Keeps the gradient smooth as you scroll */
-    color: #f0f0f2; /* Soft off-white text to keep it easy on the eyes */
+    /* This creates a perfectly smooth transition from Deep Pink down to Black */
+    background: linear-gradient(180deg, #d63384 0%, #301924 30%, #121212 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5f5; /* Clean, soft white text for optimal viewing */
 }
 
 /* Header Elements */
 header {
-    background-color: #d63384; /* Deep Berry Pink */
+    background-color: transparent; /* Transparent so it blends perfectly into the top gradient */
     color: white;
-    padding: 25px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px 20px 10px 20px;
 }
 
 .header-container {
@@ -37,13 +37,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 2.4rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Makes your name pop elegantly */
 }
 
 header p {
     margin: 5px 0 0 0;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     opacity: 0.95;
 }
 
@@ -51,37 +51,37 @@ header p {
 .cv-photo {
     width: 120px;       
     height: 140px;      
-    border-radius: 6px;  
+    border-radius: 8px;  
     border: 2px solid white;
     object-fit: cover;
     flex-shrink: 0;     
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* Smooth shadow around your photo */
 }
 
 /* Container for Content */
 .container {
     max-width: 650px;
-    margin: 30px auto;
-    padding: 20px;
-    /* Translucent dark background that lets the pink/black gradient show through softly */
-    background-color: rgba(25, 25, 28, 0.85); 
-    backdrop-filter: blur(8px); /* Subtle glass-like blur effect */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    margin: 25px auto;
+    padding: 25px;
+    /* Semi-transparent rich dark tint so the background gradient subtly shows through */
+    background-color: rgba(30, 30, 30, 0.85); 
+    backdrop-filter: blur(5px); /* Softly blurs the gradient behind the card */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
     border-radius: 8px;
-    border-top: 4px solid #d63384; /* Clean pink accent line at the top */
+    border-top: 4px solid #d63384; /* Elegant pink accent line at the top */
 }
 
 /* Headings and Paragraphs */
 h2 {
-    color: #d63384; /* Pink titles */
-    font-size: 1.25rem;
-    margin-top: 30px;
-    border-bottom: 2px solid rgba(214, 51, 132, 0.2); /* Soft pink tinted divider line */
-    padding-bottom: 5px;
+    color: #ff69b4; /* Vivid pink titles that stand out beautifully on dark themes */
+    font-size: 1.3rem;
+    margin-top: 25px;
+    border-bottom: 1px solid rgba(255, 105, 180, 0.2); /* Soft matching pink divider */
+    padding-bottom: 6px;
 }
 
 h3 {
-    color: #ff69b4; /* Brighter pink for project headings to read clearly */
+    color: #ff8da1; /* Soft pastel pink for subheadings */
     margin-bottom: 5px;
 }
 
@@ -93,7 +93,7 @@ a {
 }
 
 a:hover {
-    color: #ff85c2;
+    color: #ff8da1;
     text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 /* Button style for the CV Download link */
@@ -111,14 +111,14 @@ li {
     display: inline-block;
     background-color: #d63384;
     color: white;
-    padding: 8px 12px;
+    padding: 9px 16px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 0.9rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+    transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .btn:hover {
@@ -130,9 +130,9 @@ li {
 /* Footer Area */
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: rgba(15, 15, 17, 0.9);
-    color: #77777c;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    padding: 25px;
+    background-color: rgba(18, 18, 18, 0.9); 
+    color: #777777;
+    margin-top: 50px;
+    font-size: 0.85rem;
 }
