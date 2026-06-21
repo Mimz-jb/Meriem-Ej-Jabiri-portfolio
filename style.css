@@ -4,15 +4,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Sleek, modern matte black background */
-    color: #e0e0e0; /* Off-white text color for excellent readability over dark theme */
+    /* Smooth gradient blending from a dark charcoal black to a deep, dark berry pink */
+    background: linear-gradient(135deg, #0f0f11 0%, #2b101d 100%);
+    background-attachment: fixed; /* Keeps the gradient smooth as you scroll */
+    color: #f0f0f2; /* Soft off-white text to keep it easy on the eyes */
 }
 
 /* Header Elements */
 header {
-    background-color: #d63384; /* Deep Berry Pink stays exactly the same */
+    background-color: #d63384; /* Deep Berry Pink */
     color: white;
     padding: 25px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-container {
@@ -35,12 +38,13 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 header p {
     margin: 5px 0 0 0;
     font-size: 1.1rem;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* Professional CV Photo Layout Size */
@@ -51,6 +55,7 @@ header p {
     border: 2px solid white;
     object-fit: cover;
     flex-shrink: 0;     
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Container for Content */
@@ -58,10 +63,12 @@ header p {
     max-width: 650px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #1e1e1e; /* Rich dark-grey card box so it pops against the black body background */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    border-radius: 5px;
-    border-top: 5px solid #d63384; /* Pink accent line at the top */
+    /* Translucent dark background that lets the pink/black gradient show through softly */
+    background-color: rgba(25, 25, 28, 0.85); 
+    backdrop-filter: blur(8px); /* Subtle glass-like blur effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    border-top: 4px solid #d63384; /* Clean pink accent line at the top */
 }
 
 /* Headings and Paragraphs */
@@ -69,22 +76,24 @@ h2 {
     color: #d63384; /* Pink titles */
     font-size: 1.25rem;
     margin-top: 30px;
-    border-bottom: 2px solid #2d2d2d; /* Subtle divider accent */
+    border-bottom: 2px solid rgba(214, 51, 132, 0.2); /* Soft pink tinted divider line */
     padding-bottom: 5px;
 }
 
 h3 {
-    color: #ff69b4; /* Slightly brighter pink for subheadings so it reads perfectly over black */
+    color: #ff69b4; /* Brighter pink for project headings to read clearly */
     margin-bottom: 5px;
 }
 
 /* Hyperlinks */
 a {
-    color: #ff69b4; /* Vivid pink for text links */
+    color: #ff69b4; 
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: #ff85c2;
     text-decoration: underline;
 }
 
@@ -108,6 +117,8 @@ li {
     font-weight: bold;
     margin-top: 5px;
     font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
 }
 
 .btn:hover {
@@ -120,8 +131,8 @@ li {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #0a0a0a; /* Dark black footer */
-    color: #888888;
+    background-color: rgba(15, 15, 17, 0.9);
+    color: #77777c;
     margin-top: 40px;
     font-size: 0.9rem;
 }
