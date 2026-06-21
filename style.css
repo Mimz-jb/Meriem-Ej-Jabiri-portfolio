@@ -8,22 +8,44 @@ body {
     color: #24292e;
 }
 
-/* Header Section */
+/* Header Flexbox Layout (Lines up text and picture side-by-side) */
 header {
     background-color: #d63384; /* Deep Berry Pink */
     color: white;
-    padding: 30px 20px;
-    text-align: center;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes text to the left, picture to the right */
+    gap: 15px;
+}
+
+.header-text {
+    text-align: left;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 header p {
     margin: 5px 0 0 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Tiny circular picture next to name */
+.header-avatar {
+    width: 80px;      /* Keeps the image small and neat */
+    height: 80px;
+    border-radius: 50%; /* Perfect circle cut */
+    border: 2px solid white;
+    object-fit: cover;
+    flex-shrink: 0;   /* Prevents the image from getting squished */
 }
 
 /* Container for Content */
