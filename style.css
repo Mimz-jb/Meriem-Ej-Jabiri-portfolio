@@ -4,13 +4,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff0f5; /* Soft, light pink background */
-    color: #24292e;
+    background-color: #121212; /* Sleek, modern matte black background */
+    color: #e0e0e0; /* Off-white text color for excellent readability over dark theme */
 }
 
 /* Header Elements */
 header {
-    background-color: #d63384; /* Deep Berry Pink */
+    background-color: #d63384; /* Deep Berry Pink stays exactly the same */
     color: white;
     padding: 25px 20px;
 }
@@ -24,8 +24,8 @@ header {
 .name-photo-row {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pushes text to left, picture to right */
-    gap: 30px; /* This adds a perfect, clean space between the name text and the photo */
+    justify-content: space-between; 
+    gap: 30px; 
 }
 
 .header-text {
@@ -45,12 +45,12 @@ header p {
 
 /* Professional CV Photo Layout Size */
 .cv-photo {
-    width: 120px;       /* Beautiful, clear CV size size */
-    height: 140px;      /* Slightly taller than wide, just like a standard profile/CV photo */
-    border-radius: 6px;  /* Softly rounded rectangle borders */
+    width: 120px;       
+    height: 140px;      
+    border-radius: 6px;  
     border: 2px solid white;
     object-fit: cover;
-    flex-shrink: 0;     /* Ensures your picture never shrinks on smaller phone displays */
+    flex-shrink: 0;     
 }
 
 /* Container for Content */
@@ -58,8 +58,8 @@ header p {
     max-width: 650px;
     margin: 30px auto;
     padding: 20px;
-    background-color: white; /* Clean white card layout */
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    background-color: #1e1e1e; /* Rich dark-grey card box so it pops against the black body background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     border-radius: 5px;
     border-top: 5px solid #d63384; /* Pink accent line at the top */
 }
@@ -69,18 +69,18 @@ h2 {
     color: #d63384; /* Pink titles */
     font-size: 1.25rem;
     margin-top: 30px;
-    border-bottom: 2px solid #fff0f5;
+    border-bottom: 2px solid #2d2d2d; /* Subtle divider accent */
     padding-bottom: 5px;
 }
 
 h3 {
-    color: #b02a63;
+    color: #ff69b4; /* Slightly brighter pink for subheadings so it reads perfectly over black */
     margin-bottom: 5px;
 }
 
 /* Hyperlinks */
 a {
-    color: #d63384;
+    color: #ff69b4; /* Vivid pink for text links */
     text-decoration: none;
 }
 
@@ -120,8 +120,8 @@ li {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #b02a63;
-    color: white;
+    background-color: #0a0a0a; /* Dark black footer */
+    color: #888888;
     margin-top: 40px;
     font-size: 0.9rem;
 }
