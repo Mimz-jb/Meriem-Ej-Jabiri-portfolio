@@ -48,15 +48,15 @@ header p {
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Professional CV Photo Layout Size */
+/* UPDATED: Professional CV Photo Layout Size */
 .cv-photo {
-    width: 120px;       
-    height: 140px;      
-    border-radius: 8px;  
-    border: 2px solid white;
-    object-fit: cover;
-    flex-shrink: 0;     
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+    width: 130px;       /* Increased slightly to keep it prominent as a circle */
+    height: 130px;      /* Width and height must be equal for a perfect circle */
+    border-radius: 50%; /* This is what makes it circular */
+    border: 3px solid #121212; /* Updated to a distinct, dark black border */
+    object-fit: cover;  /* Prevents image from stretching */
+    flex-shrink: 0;     /* Ensures your picture never shrinks on smaller phone displays */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7); /* Deepened shadow for an elegant, premium look */
 }
 
 /* Container for Content */
@@ -119,6 +119,7 @@ li {
     margin-top: 8px;
     font-size: 0.9rem;
     box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+    transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .btn:hover {
